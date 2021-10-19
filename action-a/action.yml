@@ -1,0 +1,17 @@
+name: "Hello actions"
+description: "greets the user"
+author: "cecutler@github.com"
+
+inputs:
+  MY_NAME:
+    description: "the user"
+    required: true
+    default: "world"
+    
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "mic"
+  color: "purple"
